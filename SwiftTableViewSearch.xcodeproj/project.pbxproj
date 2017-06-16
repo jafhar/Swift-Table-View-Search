@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E69A58B1EF3EBCE005B6662 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E69A58A1EF3EBCE005B6662 /* Constant.swift */; };
 		2EC54E461EC498C3006D5DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC54E451EC498C3006D5DD8 /* AppDelegate.swift */; };
 		2EC54E481EC498C3006D5DD8 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC54E471EC498C3006D5DD8 /* MasterViewController.swift */; };
 		2EC54E4A1EC498C3006D5DD8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC54E491EC498C3006D5DD8 /* DetailViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E69A58A1EF3EBCE005B6662 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		2EC54E421EC498C3006D5DD8 /* SwiftTableViewSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTableViewSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC54E451EC498C3006D5DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC54E471EC498C3006D5DD8 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				2EC54E4E1EC498C3006D5DD8 /* Assets.xcassets */,
 				2EC54E501EC498C3006D5DD8 /* LaunchScreen.storyboard */,
 				2EC54E531EC498C3006D5DD8 /* Info.plist */,
+				2E69A58A1EF3EBCE005B6662 /* Constant.swift */,
 			);
 			path = SwiftTableViewSearch;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				2EC54E4A1EC498C3006D5DD8 /* DetailViewController.swift in Sources */,
 				2EC54E5A1EC59762006D5DD8 /* Candy.swift in Sources */,
+				2E69A58B1EF3EBCE005B6662 /* Constant.swift in Sources */,
 				2EC54E481EC498C3006D5DD8 /* MasterViewController.swift in Sources */,
 				2EC54E461EC498C3006D5DD8 /* AppDelegate.swift in Sources */,
 			);

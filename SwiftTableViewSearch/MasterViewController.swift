@@ -10,11 +10,11 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
-    var candies = [Candy]()
+    private var detailViewController: DetailViewController? = nil
+    private var candies = [Candy]()
     
-    let searchController = UISearchController(searchResultsController: nil)
-    var filteredCandies = [Candy]()
+    private let searchController = UISearchController(searchResultsController: nil)
+    private var filteredCandies = [Candy]()
 
 
     override func viewDidLoad() {
@@ -25,16 +25,17 @@ class MasterViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
+        //Creating static array, we can load data in different ways
         candies = [
-            Candy(category:"Chocolate", name:"Chocolate Bar"),
-            Candy(category:"Chocolate", name:"Chocolate Chip"),
-            Candy(category:"Chocolate", name:"Dark Chocolate"),
-            Candy(category:"Hard", name:"Lollipop"),
-            Candy(category:"Hard", name:"Candy Cane"),
-            Candy(category:"Hard", name:"Jaw Breaker"),
-            Candy(category:"Other", name:"Caramel"),
-            Candy(category:"Other", name:"Sour Chew"),
-            Candy(category:"Other", name:"Gummi Bear")
+            Candy(category:Constant.categoryChocolate, name:"Chocolate Bar"),
+            Candy(category:Constant.categoryChocolate, name:"Chocolate Chip"),
+            Candy(category:Constant.categoryChocolate, name:"Dark Chocolate"),
+            Candy(category:Constant.categoryHard, name:"Lollipop"),
+            Candy(category:Constant.categoryHard, name:"Candy Cane"),
+            Candy(category:Constant.categoryHard, name:"Jaw Breaker"),
+            Candy(category:Constant.categoryOther, name:"Caramel"),
+            Candy(category:Constant.categoryOther, name:"Sour Chew"),
+            Candy(category:Constant.categoryOther, name:"Gummi Bear")
         ]
         
         searchController.searchResultsUpdater = self as UISearchResultsUpdating
@@ -42,7 +43,7 @@ class MasterViewController: UITableViewController {
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
         
-        searchController.searchBar.scopeButtonTitles = ["All", "Chocolate", "Hard", "Other"]
+        searchController.searchBar.scopeButtonTitles = [Constant.categoryAll, Constant.categoryChocolate, Constant.categoryHard, Constant.categoryOther]
         searchController.searchBar.delegate = self
     }
 
@@ -117,7 +118,7 @@ class MasterViewController: UITableViewController {
         }
     }
     
-    func filterContentForSearchText(searchText: String, scope: String = "All") {
+    private func filterContentForSearchText(searchText: String, scope: String = "All") {
         filteredCandies = candies.filter { candy in
             let categoryMatch = (scope == "All") || (candy.category == scope)
             return  categoryMatch && candy.name.lowercased().contains(searchText.lowercased())
