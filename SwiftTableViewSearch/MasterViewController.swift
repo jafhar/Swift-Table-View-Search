@@ -118,7 +118,7 @@ class MasterViewController: UITableViewController {
         }
     }
     
-    private func filterContentForSearchText(searchText: String, scope: String = "All") {
+    fileprivate func filterContentForSearchText(searchText: String, scope: String = "All") {
         filteredCandies = candies.filter { candy in
             let categoryMatch = (scope == "All") || (candy.category == scope)
             return  categoryMatch && candy.name.lowercased().contains(searchText.lowercased())

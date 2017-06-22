@@ -41,6 +41,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E8AF5381EFBBC0500A8F658 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EC54E591EC59762006D5DD8 /* Candy.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2E8AF5391EFBBC2C00A8F658 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EC54E4B1EC498C3006D5DD8 /* Main.storyboard */,
+				2EC54E501EC498C3006D5DD8 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		2E8AF53A1EFBBC4700A8F658 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EC54E471EC498C3006D5DD8 /* MasterViewController.swift */,
+				2EC54E491EC498C3006D5DD8 /* DetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2E8AF53B1EFBBC5D00A8F658 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2EC54E451EC498C3006D5DD8 /* AppDelegate.swift */,
+				2E69A58A1EF3EBCE005B6662 /* Constant.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		2E8AF53C1EFBBC8A00A8F658 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EC54E531EC498C3006D5DD8 /* Info.plist */,
+				2EC54E4E1EC498C3006D5DD8 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2EC54E391EC498C3006D5DD8 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +104,11 @@
 		2EC54E441EC498C3006D5DD8 /* SwiftTableViewSearch */ = {
 			isa = PBXGroup;
 			children = (
-				2EC54E451EC498C3006D5DD8 /* AppDelegate.swift */,
-				2EC54E471EC498C3006D5DD8 /* MasterViewController.swift */,
-				2EC54E591EC59762006D5DD8 /* Candy.swift */,
-				2EC54E491EC498C3006D5DD8 /* DetailViewController.swift */,
-				2EC54E4B1EC498C3006D5DD8 /* Main.storyboard */,
-				2EC54E4E1EC498C3006D5DD8 /* Assets.xcassets */,
-				2EC54E501EC498C3006D5DD8 /* LaunchScreen.storyboard */,
-				2EC54E531EC498C3006D5DD8 /* Info.plist */,
-				2E69A58A1EF3EBCE005B6662 /* Constant.swift */,
+				2E8AF5381EFBBC0500A8F658 /* Model */,
+				2E8AF5391EFBBC2C00A8F658 /* Views */,
+				2E8AF53A1EFBBC4700A8F658 /* Controllers */,
+				2E8AF53B1EFBBC5D00A8F658 /* Common */,
+				2E8AF53C1EFBBC8A00A8F658 /* Supporting Files */,
 			);
 			path = SwiftTableViewSearch;
 			sourceTree = "<group>";
